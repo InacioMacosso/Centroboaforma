@@ -15,7 +15,37 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 <body>
-    <section class="home bloco">
+    <!-- Header-->
+    <header>
+        <div class="navbar-fixed">
+            <nav class="navbar z-depth-0">
+                <div class="nav-wrapper container">
+                    <h1 class="logo_text">Centro Boa Forma - Seu espaço de saude </h1>
+                    <a href=""><img class="logo_img" src="img/logo.png" alt="Lodo da empresa"></a>
+                     <!--Menu mobile-->
+                    <ul id="menu-mobile" class="sidenav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre o Boa Forma</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    <ul class="right light hide-on-med-and-down">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre o Boa Forma</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#unidades">Unidades</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                     <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons">menu</i></a> <!-- Para receber os links da ul quando desaparecerem nos despositivos pequenos-->
+                </div>
+            </nav>
+           
+        </div>
+    </header>
+
+    <!-- Home-->
+    <section class="home bloco scrollspy" id="home">
         <div class="row container banner">
             <div class="col s12 center">
                 <h2 class="white-text"> O melhor treinamento funcional da regiao</h2>
@@ -30,18 +60,106 @@
                     Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
                     Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
                     </p>
-                <div class="row botoes">
-                    <a class="btn btn-large blue">Sobre nos</a>
-                    <a class="btn btn-large white black-text">Contacto</a>
+                <div class="row">
+                    <a href="#sobre" class="btn btn-large blue-logo">Sobre nos</a>
+                    <a href="#contacto" class="btn btn-large white black-text">Contacto</a>
 
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre nos-->
+    <section class="sobre bloco scrollspy" id="sobre">
+        <div class="row container">
+          <div class="col s12 center">
+            <h2 class="light">Sobre nos</h2>
+          </div> 
+          <div class="col s12 l6">
+            <p class="light">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
+                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
+                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
+                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
+                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content 
+                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use 
+                Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
+                Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+          </div> 
+            <div class="col s12 l6">
+                <div class="carousel carousel-slider">
+                    <a href="#one" class="carousel-item"><img src="img/banner-01.jpg" alt="imagem institucional"></a>
+                    <a href="#two" class="carousel-item"><img src="img/banner-02.jpg" alt="imagem institucional"></a>
+                    <a href="#three" class="carousel-item"><img src="img/banner-03.jpg" alt="imagem institucional"></a>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row blue-logo missao-visao-valores">
+            <div class="container">
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">directions_run</i></span>
+                    <h3 class="light">Missao</h3>
+                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum.</p>
+                </article>
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">visibility</i></span>
+                    <h3 class="light">Visao</h3>
+                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum.</p>
+                </article>
+                <article class="item col s12 m4 center">
+                    <span class="icon"><i class="material-icons medium">grade</i></span>
+                    <h3 class="light">Valores</h3>
+                    <p class="light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                        deserunt mollit anim id est laborum.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--Serviços-->
+    <section class="servicos bloco scrollspy" id="servicos">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="light">Serviços</h2>
+                <p class="light">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+                    deserunt mollit anim id est laborum.
+                </p>
+
             </div>
 
         </div>
 
     </section>
-    
 
+    <!--Unidades-->
+    <section class="unidades bloco scrollspy" id="unidades">
+
+    </section>
+
+     <!--Contactos-->
+     <section class="unidades bloco scrollspy" id="contacto">
+
+    </section>
 
 
 
@@ -50,6 +168,30 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--Incluindo materialize js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // Inicializaçao
+        $(document).ready(function(){
+            // Menu Mobile
+            $(".sidenav").sidenav();
+            // Link interno
+            $('.scrollspy').scrollSpy({scrollOffset: 0});
+            // Carousel
+            $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+            });
+        });  
+        
+        // Adicionando a nav-color
+        $(window).on("scroll", function(){
+          if($(window).scrollTop() > 100){
+              $(".navbar").addClass("nav-color");
+          } 
+          else $(".navbar").removeClass("nav-color");
+        })
+    </script>
 
 </body>
 </html>

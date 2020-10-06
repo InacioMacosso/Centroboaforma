@@ -30,25 +30,14 @@ margin-top: 15px;}
     color: #2dc7d0; /*Para os itens mudarem a cor quando se passa mouse por cima*/
 }
 
-/*Redimencionar a navbar predefinida do materialize*/
-nav {height: 94px; line-height: 94px;}
-
   nav.nav-extended .nav-wrapper {min-height: 94px; }
 /* Tornar a navbar fixo*/
-  .navbar-fixed {
-    position: absolute;
-    height: 94px;
-    z-index: 997;
-  }
+  .navbar-fixed { position: absolute; height: 94px; }
 
-  nav i,
+  /*Redimencionar a navbar predefinida do materialize*/
+nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
-  display: block;
-  font-size: 24px;
-  height: 94px;
-  line-height: 94px;
-}
+nav i.material-icons, nav a.sidenav-triger i{height: 94px; line-height: 94px; }
 
 .sidenav {
     background: url(../img/textura2.png);
@@ -95,23 +84,21 @@ nav i.material-icons {
   100% { background-image: url('../img/bg.jpg'); } 
 }
 
-/* Sobre nos*/
 
+/*Titulo e paragrafo*/
+.titulo { font-size: 2rem; text-transform: uppercase;}
+.titulo::after {content: '';
+  display: block;
+  width: 100px;
+  border-top: 1px solid #2dc7d0;
+  margin: 15px auto; }
+
+  .paragrafo{ line-height: 1.8rem;}
+/* Sobre nos*/
 .sobre{
    background-image: url('../img/textura1.png'); 
 }
-.sobre h2{
-    font-size: 2rem;
-    color: #212121;
-    text-transform: uppercase;
-}
-.sobre h2::after{
-    content: '';
-    display: block;
-    width: 100px;
-    border-top: 1px solid #2dc7d0;
-    margin: 15px auto; 
-}
+
 
 .sobre p{
     line-height: 1.8rem;
@@ -128,44 +115,15 @@ text-transform: uppercase;}
 
 /*Serviços*/
 .servicos { background-image: url(../img/textura2.png);}
-.servicos h2{
-  font-size: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-}
-.servicos h2::after{
-  content: '';
-  display: block;
-  width: 100px;
-  border-top: 1px solid #2dc7d0;
-  margin: 15px auto; 
-}
-
-.servicos p{
-  color: #fff;
-  line-height: 1.8rem; 
-}
 
 /*Unidades*/
 .unidades {background-image: url(../img/bg-unidades.jpg); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;}
-.unidades h2{
-  font-size: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-}
-.unidades h2::after{
-  content: '';
-  display: block;
-  width: 100px;
-  border-top: 1px solid #2dc7d0;
-  margin: 15px auto; 
-}
+.unidades article p {line-height: 1.8rem;}
 
-.unidades p{
-  color: #fff;
-  line-height: 1.8rem; 
-}
-
+/* Contacto*/
+.contacto{background-image: url(../img/textura1.png);}
+.contacto .mapa {min-width: 500px;}
+.contacto .mapa iframe {width: 100%; min-height: 500px; border: none;}
 
 
 /* MEDIA */

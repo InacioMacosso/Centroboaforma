@@ -17,19 +17,20 @@
 <body>
     <!-- Header-->
     <header>
+        <!--Menu mobile-->
+        <ul id="menu-mobile" class="sidenav">
+            <li><a  class="sidenav-close" href="#home">Home</a></li>
+            <li><a  class="sidenav-close" href="#sobre">Sobre o Boa Forma</a></li>
+            <li><a  class="sidenav-close" href="#servicos">Serviços</a></li>
+            <li><a  class="sidenav-close" href="#unidades">Unidades</a></li>
+            <li><a  class="sidenav-close" href="#contacto">Contacto</a></li>
+        </ul>
         <div class="navbar-fixed">
             <nav class="navbar z-depth-0">
                 <div class="nav-wrapper container">
                     <h1 class="logo_text">Centro Boa Forma - Seu espaço de saude </h1>
                     <a href=""><img class="logo_img" src="img/logo.png" alt="Lodo da empresa"></a>
-                     <!--Menu mobile-->
-                    <ul id="menu-mobile" class="sidenav">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre">Sobre o Boa Forma</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#unidades">Unidades</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
-                    </ul>
+                     
                     <ul class="right light hide-on-med-and-down">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#sobre">Sobre o Boa Forma</a></li>
@@ -73,20 +74,16 @@
     <section class="sobre bloco scrollspy" id="sobre">
         <div class="row container">
           <div class="col s12 center">
-            <h2 class="light">Sobre nos</h2>
+            <h2 class="light titulo">Sobre nos</h2>
           </div> 
           <div class="col s12 l6">
             <p class="light">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
-                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen 
-                book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially 
-                unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more 
-                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
-                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content 
-                here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use 
-                Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. 
-                Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                A Centro Boa Forma chegou a Itabuna e região trazendo um novo conceito em prevenção, promoção e reabilitação da saúde. 
+                Localizada no centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e 
+                seguro aos seus usuários. Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, 
+                para acolher principalmente pessoas com limitações funcionais. O centro dispõe de uma equipe profissional qualificada e com 
+                experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas. Localizada no 
+                centro da cidade, conta com fácil estacionamento, salas amplas e climatizadas, ambiente confortável e seguro aos seus usuários.
             </p>
           </div> 
             <div class="col s12 l6">
@@ -133,10 +130,10 @@
     </section>
 
     <!--Serviços-->
-    <section class="servicos bloco scrollspy" id="servicos">
+    <section class="servicos bloco scrollspy white-text" id="servicos">
         <div class="row container">
             <div class="col s12 center">
-                <h2 class="light">Serviços</h2>
+                <h2 class="light titulo">Serviços</h2>
                 <p class="light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
@@ -491,8 +488,8 @@
     <section class="unidades bloco scrollspy" id="unidades">
         <div class="row container">
             <div class="col s12 center">
-                <h2 class="light">Unidades</h2>
-                <p class="light">
+                <h2 class="light titulo white-text">Unidades</h2>
+                <p class="light paragrafo white-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
@@ -533,8 +530,8 @@
                         <div class="card-content">
                             <h3 class="card-title light">São Paulo</h3>
                             <p class="black-text">
-                                <i class="material-icons left">phone</i> 304 214 524 <br>
-                                <i class="material-icons left">email</i> sp@yahoo.com <br>
+                                <i class="material-icons left">phone</i>       304 214 524 <br>
+                                <i class="material-icons left">email</i>       sp@yahoo.com <br>
                                 <i class="material-icons left">location_on</i> Av. Belo Horizonte, 245 
                             </p>
                         </div>
@@ -593,7 +590,20 @@
     </section>
 
      <!--Contactos-->
-     <section class="contactos bloco scrollspy" id="contacto">
+     <section class="contacto bloco scrollspy" id="contacto">
+         <div class="row container">
+             <div class=" col s12 center">
+                 <h2 class="titulo light"> Contacto</h2>
+             </div>
+             <div class="col s12 m6 l4">
+                <div class="mapa transparent">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.4712618513327!2d2.271561815881994!3d49.92749803278779!
+                    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e786b33e3719cf%3A0x5fca6cfbcc69e662!2sAFPA!5e0!3m2!1sfr!2sfr!4v1601995800868!5m2!1sfr!2sfr" 
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+             </div>
+
+         </div>
 
     </section>
 
@@ -630,6 +640,12 @@
 
         // TABS
         $(".tabs").tabs();
+
+        function autoplay() {
+            $(".carousel").carousel("next");
+            setTimeout(autoplay, 4500);
+        }
+        autoplay();
             
         });  
         

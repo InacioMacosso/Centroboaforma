@@ -9,6 +9,9 @@
 
     <!--Importando Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Fonte Awsome-->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <!-- Incluindo o materialize css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Incluindo custom css-->
@@ -591,24 +594,132 @@
 
      <!--Contactos-->
      <section class="contacto bloco scrollspy" id="contacto">
-         <div class="row container">
-             <div class=" col s12 center">
-                 <h2 class="titulo light"> Contacto</h2>
-             </div>
-             <div class="col s12 m6 l4">
+        <div class="row container">
+            <div class=" col s12 center">
+                <h2 class="titulo light"> Contacto</h2>
+            </div>
+            <div class="col s12 m6 l4 hide-on-med-only">
                 <div class="mapa transparent">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.4712618513327!2d2.271561815881994!3d49.92749803278779!
-                    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e786b33e3719cf%3A0x5fca6cfbcc69e662!2sAFPA!5e0!3m2!1sfr!2sfr!4v1601995800868!5m2!1sfr!2sfr" 
-                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2568.4712618513327!2d2.271561815881994!3d49.92749803278779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e786b33e3719cf%3A0x5fca6cfbcc69e662!2sAFPA!5e0!3m2!1sfr!2sfr!4v1602060412463!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-             </div>
+            </div>
+            <div class="col s12 m6 l4">
+                <div class="informacoes white-text">
+                    <h4>REDES SOCIAIS</h4>
+                    <p class="light">
+                        Fique por dentro das novidades, receba dicas, ou simplesmente mostre ao mundo que você faz parte desse projeto sensacional!
+                    </p>
+                    <a href="https://www.facebook.com/tvcabinda/" class="btn-floating blue-logo"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/tvcabinda/"class="btn-floating blue-logo"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCuwtrpqG0kJkvzXIqwQLPwg/"class="btn-floating blue-logo"><i class="fa fa-youtube"></i></a>
 
-         </div>
+                    <h4>Endereço</h4>
+                    <p class="light">Rua paraíso, 123 <br>
+                        Centro, Itabuna - Ba</p>
+
+                    <h4>Contactos</h4>
+                    <p class="light">(73) 123456987 <br>
+                        (45) 123456789 <br>
+                        (56) 234567678</p>
+                </div>
+
+            </div>
+            <div  class="col s12 m6 l4">
+                <div class=" formulario white black-text">
+                    <h4>Fale conosco</h4>
+                    <p class="light">Dúvidas, criticas ou sujestões? Entre em contato conosco, seu feedback é muito importante.</p>
+                    <form action="" method="POST">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input type="text" name="name" id="name">
+                            <label for="name">Seu nome</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">emailt</i>
+                            <input type="email" name="email" id="email">
+                            <label for="email">Seu email</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">Telephone</label>
+                        </div>
+                        <div class="input-field">
+                            <select>
+                                <option value="" disabled selected>Escolhe uma opçao</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                              </select>
+                              <label>Assunto</label>
+                        </div>
+                        <div class="input-field">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea class="materialize-textarea" name="mensagem"  cols="30" rows="10" id="mensagem"></textarea>
+                            <label for="mensagem">Mensagem</label>
+                        </div>
+                        <button class="btn blue-logo" type="submit">Enviar</button>   
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
+    <!--Depoimentos-->
+    <div class="depoimentos blue-logo">
+        <div class="row container">
+            <div class="col s12 center">
+                <h2 class="titulo white-text light">Depoimentos</h2>
+            </div>
+            <div class="col s12 m4 center">
+                <img class="circle responsive-img" src="img/depo1.jpg" alt="Depoimento 1">
+                <p class="light white-text">"Conheci o treinamento funcional e a metodologia Centro Boa Forma por indicação de um amigo. Execelentes profissionais e super atenciosos!"</p>
+                <h4 class="light white-text">Felipe Souza</h4>
+                <p class="light white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+            <div class="col s12 m4 center">
+                <img class="circle responsive-img" src="img/depo2.jpg" alt="Depoimento 1">
+                <p class="light white-text">"Gostei muito da oficina e das aulas, superou minhas expectativas. A empresa e os treinamentos foram ótimos!"</p>
+                <h4 class="light white-text">Bruno Valério</h4>
+                <p class="light white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+            <div class="col s12 m4 center">
+                <img class="circle responsive-img" src="img/depo3.jpg" alt="Depoimento 1">
+                <p class="light white-text">"Treinar com motivação e satisfação pelos resultados obtidos são os motivos que me conquistaram e me mantém no Centro Boa Forma."</p>
+                <h4 class="light white-text">Joana Souza</h4>
+                <p class="light white-text">
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                    <i class="material-icons">star</i>
+                </p>
+            </div>
+        </div>
 
-
-
+    </div>
+    <!--Rodapé-->
+    <footer class="rodape">
+        <div class="row container center">
+            <img src="img/logo.png" alt="Logo" class="logo_img">
+            <p class="light white-text">© Centro Boa Forma 2017 - Todos os direitos reservados</p>
+        </div>
+    </footer>
 
    <!--Incluir Jquery CDN-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -646,6 +757,8 @@
             setTimeout(autoplay, 4500);
         }
         autoplay();
+
+        $('select').formSelect();
             
         });  
         
